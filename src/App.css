@@ -1,0 +1,233 @@
+body {
+  font-family: 'Poppins', sans-serif !important;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(180deg, #01171F 0%, #009AD8 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+.logo {
+  display: flex;
+  transition: 0.3s ease-out;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.searchInput .MuiOutlinedInput-root {
+  border-radius: 30px;
+}
+
+.searchInput {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.15px;
+}
+
+input[type=text] {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.15px;
+  color: #009AD8;
+}
+
+.greetings {
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: 0.8px;
+  color: #FFFFFF;
+}
+
+.greetingsSubtitle {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+/* Card Content */
+
+.userCard {
+  box-shadow: 0px 0px 0px 2px rgba(0, 154, 216, 0.5);
+}
+
+.cardRemove {
+  animation: fadeout forwards 0.5s ease-out;
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1
+  }
+
+  to {
+    opacity: 0
+  }
+}
+
+.userPicture {
+  width: 88px;
+  height: 88px;
+  border-radius: 8px;
+}
+
+.userName {
+  width: 350px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.17px;
+  color: #FFFFFF;
+}
+
+.userData {
+  width: 350px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.17px;
+  color: #BEBEBE;
+}
+
+.locationIcon {
+  align-self: center;
+}
+
+.emailIcon {
+  align-self: center;
+}
+
+.btnDelete:hover {
+  transform: scale(1.1);
+}
+
+.deleteIcon {
+  animation: shake forwards 0.3s ease-out;
+}
+
+@keyframes shake {
+
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  20%,
+  60% {
+    transform: translateX(-5px);
+  }
+
+  40%,
+  80% {
+    transform: translateX(5px);
+  }
+}
+
+/* Notifications Menu */
+
+.notifications {
+  font-style: normal;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+.accountText {
+  font-style: normal;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+.inboxUser {
+  font-style: normal;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+.inboxMessage {
+  font-style: normal;
+  font-size: 14px;
+  color: #009AD8;
+}
+
+/* 404 Error */
+
+.errorTitle {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  letter-spacing: 0.8px;
+  color: #FDF3DD;
+}
+
+.errorSubtitle {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  color: #FDF3DD;
+}
+
+/* Credits */
+
+.creditsContainer {
+  background: linear-gradient(180deg, rgba(110, 109, 109, 0.123) 0%, rgba(156, 152, 152, 0.564) 100%);
+  backdrop-filter: blur(50px);
+  border: #009AD8 1px solid;
+  border-radius: 30px;
+  align-items: center;
+}
+
+.creditsTitle {
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  color: #FFFFFF;
+}
+
+@media only screen and (max-width: 600px) {
+  .userPicture {
+    transform: scale(0.95);
+  }
+
+  .userName {
+    width: 150px;
+    font-size: 16px;
+  }
+
+  .userData {
+    width: 130px;
+    font-size: 13px;
+  }
+
+  .btnDelete {
+    transform: scale(0.8);
+  }
+
+  .errorTitle {
+    text-align: center;
+    font-size: 18px;
+    text-overflow: clip;
+  }
+
+  .errorSubtitle {
+    text-align: center;
+    font-size: 15px;
+    text-overflow: clip;
+  }
+
+  .errorIcon {
+    width: 293px;
+    height: 300px;
+    transform: scale(0.8);
+  }
+}
